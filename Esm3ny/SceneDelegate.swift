@@ -13,12 +13,88 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
-    }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = creatTabBarContoller()
+            //UINavigationController(rootViewController: AudioBookslistVC())
+        window?.makeKeyAndVisible()
 
+    }
+    
+    func createAudioBookNC() -> UINavigationController {
+        let audioVC =  AudioBookslistVC()
+        let navController = UINavigationController(rootViewController: audioVC)
+    
+        audioVC.view.backgroundColor = .clear
+        let tabBarItem = AKFloatTabBarItem(selectedimage: #imageLiteral(resourceName: "Books")  ,image: #imageLiteral(resourceName: "Booksblured"), tag: 0)
+
+        audioVC.tabBarItem =  tabBarItem
+        
+        navController.navigationBar.prefersLargeTitles = false
+        navController.isNavigationBarHidden = true
+        //navController.navigationBar.barTintColor = .systemGray6
+        return navController
+    }
+    
+    func creatBookMarkNC() -> UINavigationController {
+        let audioVC =  UIViewController()
+        let navController = UINavigationController(rootViewController: audioVC)
+    
+        audioVC.view.backgroundColor = .red
+        let tabBarItem = AKFloatTabBarItem(selectedimage: #imageLiteral(resourceName: "Saved"), image: #imageLiteral(resourceName: "Savedblured"), tag: 1)
+        audioVC.tabBarItem =  tabBarItem
+        
+        navController.navigationBar.prefersLargeTitles = false
+        navController.isNavigationBarHidden = true
+        //navController.navigationBar.barTintColor = .systemGray6
+        return navController
+    }
+    
+    func createHistoryBookNC() -> UINavigationController {
+        let audioVC =  UIViewController()
+        let navController = UINavigationController(rootViewController: audioVC)
+    
+        audioVC.view.backgroundColor = .black
+        let tabBarItem = AKFloatTabBarItem(selectedimage:#imageLiteral(resourceName: "Audio"), image: #imageLiteral(resourceName: "Audioblured"), tag: 2)
+        audioVC.tabBarItem =  tabBarItem
+        
+        navController.navigationBar.prefersLargeTitles = false
+        navController.isNavigationBarHidden = true
+        //navController.navigationBar.barTintColor = .systemGray6
+        return navController
+    }
+    
+    func createprofileNC() -> UINavigationController {
+        let audioVC =  UIViewController()
+        let navController = UINavigationController(rootViewController: audioVC)
+    
+        audioVC.view.backgroundColor = .systemGray
+        let tabBarItem = AKFloatTabBarItem(selectedimage:#imageLiteral(resourceName: "Profile"), image: #imageLiteral(resourceName: "ProfileBlured"), tag: 3)
+        audioVC.tabBarItem =  tabBarItem
+        
+        navController.navigationBar.prefersLargeTitles = false
+        navController.isNavigationBarHidden = false
+        //navController.navigationBar.barTintColor = .systemGray6
+        return navController
+    }
+    
+    func creatTabBarContoller() -> UITabBarController {
+        let tabBAr = AKFloatTabBar()
+        UITabBar.appearance().tintColor = .white
+//        UITabBar.appearance().shadowImage = UIImage()
+//        UITabBar.appearance().backgroundImage = UIImage()
+//
+//        tabBAr.tabBar.isTranslucent = true
+        UITabBar.appearance().backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).withAlphaComponent(0.2)
+        UITabBar.appearance().clipsToBounds = true
+        
+        
+        tabBAr.viewControllers = [  createAudioBookNC()  , creatBookMarkNC() , createHistoryBookNC() , createprofileNC() ]
+        
+        return tabBAr
+    }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

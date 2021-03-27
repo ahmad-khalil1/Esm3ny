@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1302CD5725D34B58006EA651 /* BookItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302CD5625D34B58006EA651 /* BookItem.swift */; };
+		1302CD5F25D35F2C006EA651 /* ContinueBooksCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302CD5E25D35F2C006EA651 /* ContinueBooksCVC.swift */; };
+		1302CD6425D36CDB006EA651 /* ContinueLisitningHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302CD6325D36CDB006EA651 /* ContinueLisitningHeader.swift */; };
+		1302CD6E25D36FC7006EA651 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1302CD6B25D36FC7006EA651 /* Montserrat-SemiBold.ttf */; };
+		1302CD6F25D36FC7006EA651 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1302CD6C25D36FC7006EA651 /* Montserrat-Bold.ttf */; };
+		1302CD7025D36FC7006EA651 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1302CD6D25D36FC7006EA651 /* Montserrat-Regular.ttf */; };
+		1334D1AC25E48D3B00FFD261 /* AudioBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334D1AB25E48D3B00FFD261 /* AudioBookVC.swift */; };
+		1334D1B125E48FE700FFD261 /* AudioBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1334D1B025E48FE700FFD261 /* AudioBookView.swift */; };
+		13460AD325E5E025008D4E66 /* UIViewController+Preview.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 13460AD225E5E025008D4E66 /* UIViewController+Preview.swift .swift */; };
+		13460ADB25E5E0AE008D4E66 /* UIView+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13460ADA25E5E0AE008D4E66 /* UIView+Preview.swift */; };
+		136B47B825DCA5E6003C5397 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 136B47B725DCA5E6003C5397 /* Montserrat-Medium.ttf */; };
 		1391536B25D1827D00ACFD90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391536A25D1827D00ACFD90 /* AppDelegate.swift */; };
 		1391536D25D1827D00ACFD90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391536C25D1827D00ACFD90 /* SceneDelegate.swift */; };
-		1391536F25D1827D00ACFD90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391536E25D1827D00ACFD90 /* ViewController.swift */; };
-		1391537225D1827D00ACFD90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1391537025D1827D00ACFD90 /* Main.storyboard */; };
+		1391536F25D1827D00ACFD90 /* AudioBookslistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391536E25D1827D00ACFD90 /* AudioBookslistVC.swift */; };
 		1391537425D1827F00ACFD90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1391537325D1827F00ACFD90 /* Assets.xcassets */; };
 		1391537725D1827F00ACFD90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1391537525D1827F00ACFD90 /* LaunchScreen.storyboard */; };
 		1391538225D1827F00ACFD90 /* Esm3nyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391538125D1827F00ACFD90 /* Esm3nyTests.swift */; };
 		1391538D25D1827F00ACFD90 /* Esm3nyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391538C25D1827F00ACFD90 /* Esm3nyUITests.swift */; };
+		139153AE25D18A8700ACFD90 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139153AB25D18A8700ACFD90 /* VerticalStackView.swift */; };
+		139153AF25D18A8700ACFD90 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139153AC25D18A8700ACFD90 /* UIView+Layout.swift */; };
+		139153B025D18A8700ACFD90 /* AnchoredConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139153AD25D18A8700ACFD90 /* AnchoredConstraints.swift */; };
+		139153BD25D2D3B800ACFD90 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139153BC25D2D3B800ACFD90 /* Extentions.swift */; };
+		13D5EA4525DB4C500028C8F8 /* AKFloatTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5EA4325DB4C500028C8F8 /* AKFloatTabBar.swift */; };
+		13D5EA4625DB4C500028C8F8 /* AKFloatTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5EA4425DB4C500028C8F8 /* AKFloatTabBarItem.swift */; };
+		13D5EA5225DB55BD0028C8F8 /* TopBooksCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D5EA5125DB55BD0028C8F8 /* TopBooksCVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +52,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1302CD5625D34B58006EA651 /* BookItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookItem.swift; sourceTree = "<group>"; };
+		1302CD5E25D35F2C006EA651 /* ContinueBooksCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueBooksCVC.swift; sourceTree = "<group>"; };
+		1302CD6325D36CDB006EA651 /* ContinueLisitningHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueLisitningHeader.swift; sourceTree = "<group>"; };
+		1302CD6B25D36FC7006EA651 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		1302CD6C25D36FC7006EA651 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		1302CD6D25D36FC7006EA651 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		1334D1AB25E48D3B00FFD261 /* AudioBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookVC.swift; sourceTree = "<group>"; };
+		1334D1B025E48FE700FFD261 /* AudioBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookView.swift; sourceTree = "<group>"; };
+		13460AD225E5E025008D4E66 /* UIViewController+Preview.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift .swift"; sourceTree = "<group>"; };
+		13460ADA25E5E0AE008D4E66 /* UIView+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Preview.swift"; sourceTree = "<group>"; };
+		136B47B725DCA5E6003C5397 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		1391536725D1827D00ACFD90 /* Esm3ny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Esm3ny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1391536A25D1827D00ACFD90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1391536C25D1827D00ACFD90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1391536E25D1827D00ACFD90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1391537125D1827D00ACFD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1391536E25D1827D00ACFD90 /* AudioBookslistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookslistVC.swift; sourceTree = "<group>"; };
 		1391537325D1827F00ACFD90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1391537625D1827F00ACFD90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1391537825D1827F00ACFD90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +76,13 @@
 		1391538825D1827F00ACFD90 /* Esm3nyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Esm3nyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1391538C25D1827F00ACFD90 /* Esm3nyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Esm3nyUITests.swift; sourceTree = "<group>"; };
 		1391538E25D1827F00ACFD90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		139153AB25D18A8700ACFD90 /* VerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		139153AC25D18A8700ACFD90 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		139153AD25D18A8700ACFD90 /* AnchoredConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchoredConstraints.swift; sourceTree = "<group>"; };
+		139153BC25D2D3B800ACFD90 /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		13D5EA4325DB4C500028C8F8 /* AKFloatTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKFloatTabBar.swift; sourceTree = "<group>"; };
+		13D5EA4425DB4C500028C8F8 /* AKFloatTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKFloatTabBarItem.swift; sourceTree = "<group>"; };
+		13D5EA5125DB55BD0028C8F8 /* TopBooksCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBooksCVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +110,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1302CD5525D34B32006EA651 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1302CD5625D34B58006EA651 /* BookItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1302CD6825D36F4A006EA651 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				1302CD6A25D36F62006EA651 /* Fonts */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		1302CD6A25D36F62006EA651 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1302CD6C25D36FC7006EA651 /* Montserrat-Bold.ttf */,
+				1302CD6D25D36FC7006EA651 /* Montserrat-Regular.ttf */,
+				1302CD6B25D36FC7006EA651 /* Montserrat-SemiBold.ttf */,
+				136B47B725DCA5E6003C5397 /* Montserrat-Medium.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		13460AD125E5E018008D4E66 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				13460AD225E5E025008D4E66 /* UIViewController+Preview.swift .swift */,
+				13460ADA25E5E0AE008D4E66 /* UIView+Preview.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
 		1391535E25D1827D00ACFD90 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +169,13 @@
 		1391536925D1827D00ACFD90 /* Esm3ny */ = {
 			isa = PBXGroup;
 			children = (
+				1302CD6825D36F4A006EA651 /* Resourses */,
+				1302CD5525D34B32006EA651 /* Model */,
+				139153AA25D18A7600ACFD90 /* Helpers */,
+				139153C525D33B2500ACFD90 /* Views */,
+				139153C425D33B1900ACFD90 /* Controllers */,
 				1391536A25D1827D00ACFD90 /* AppDelegate.swift */,
 				1391536C25D1827D00ACFD90 /* SceneDelegate.swift */,
-				1391536E25D1827D00ACFD90 /* ViewController.swift */,
-				1391537025D1827D00ACFD90 /* Main.storyboard */,
 				1391537325D1827F00ACFD90 /* Assets.xcassets */,
 				1391537525D1827F00ACFD90 /* LaunchScreen.storyboard */,
 				1391537825D1827F00ACFD90 /* Info.plist */,
@@ -126,6 +199,48 @@
 				1391538E25D1827F00ACFD90 /* Info.plist */,
 			);
 			path = Esm3nyUITests;
+			sourceTree = "<group>";
+		};
+		139153AA25D18A7600ACFD90 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				13460AD125E5E018008D4E66 /* Preview */,
+				13D5EA4A25DB4C5B0028C8F8 /* FloatTabBar */,
+				139153AD25D18A8700ACFD90 /* AnchoredConstraints.swift */,
+				139153BC25D2D3B800ACFD90 /* Extentions.swift */,
+				139153AC25D18A8700ACFD90 /* UIView+Layout.swift */,
+				139153AB25D18A8700ACFD90 /* VerticalStackView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		139153C425D33B1900ACFD90 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1391536E25D1827D00ACFD90 /* AudioBookslistVC.swift */,
+				1334D1AB25E48D3B00FFD261 /* AudioBookVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		139153C525D33B2500ACFD90 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1302CD5E25D35F2C006EA651 /* ContinueBooksCVC.swift */,
+				1302CD6325D36CDB006EA651 /* ContinueLisitningHeader.swift */,
+				13D5EA5125DB55BD0028C8F8 /* TopBooksCVC.swift */,
+				1334D1B025E48FE700FFD261 /* AudioBookView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		13D5EA4A25DB4C5B0028C8F8 /* FloatTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				13D5EA4325DB4C500028C8F8 /* AKFloatTabBar.swift */,
+				13D5EA4425DB4C500028C8F8 /* AKFloatTabBarItem.swift */,
+			);
+			path = FloatTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +346,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1302CD6F25D36FC7006EA651 /* Montserrat-Bold.ttf in Resources */,
+				1302CD6E25D36FC7006EA651 /* Montserrat-SemiBold.ttf in Resources */,
 				1391537725D1827F00ACFD90 /* LaunchScreen.storyboard in Resources */,
+				1302CD7025D36FC7006EA651 /* Montserrat-Regular.ttf in Resources */,
+				136B47B825DCA5E6003C5397 /* Montserrat-Medium.ttf in Resources */,
 				1391537425D1827F00ACFD90 /* Assets.xcassets in Resources */,
-				1391537225D1827D00ACFD90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +376,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1391536F25D1827D00ACFD90 /* ViewController.swift in Sources */,
+				1334D1AC25E48D3B00FFD261 /* AudioBookVC.swift in Sources */,
+				1391536F25D1827D00ACFD90 /* AudioBookslistVC.swift in Sources */,
+				13460ADB25E5E0AE008D4E66 /* UIView+Preview.swift in Sources */,
+				1302CD6425D36CDB006EA651 /* ContinueLisitningHeader.swift in Sources */,
+				139153AE25D18A8700ACFD90 /* VerticalStackView.swift in Sources */,
+				13D5EA4625DB4C500028C8F8 /* AKFloatTabBarItem.swift in Sources */,
+				13460AD325E5E025008D4E66 /* UIViewController+Preview.swift .swift in Sources */,
 				1391536B25D1827D00ACFD90 /* AppDelegate.swift in Sources */,
+				1302CD5725D34B58006EA651 /* BookItem.swift in Sources */,
+				13D5EA5225DB55BD0028C8F8 /* TopBooksCVC.swift in Sources */,
+				1334D1B125E48FE700FFD261 /* AudioBookView.swift in Sources */,
 				1391536D25D1827D00ACFD90 /* SceneDelegate.swift in Sources */,
+				139153B025D18A8700ACFD90 /* AnchoredConstraints.swift in Sources */,
+				13D5EA4525DB4C500028C8F8 /* AKFloatTabBar.swift in Sources */,
+				139153AF25D18A8700ACFD90 /* UIView+Layout.swift in Sources */,
+				1302CD5F25D35F2C006EA651 /* ContinueBooksCVC.swift in Sources */,
+				139153BD25D2D3B800ACFD90 /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +428,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1391537025D1827D00ACFD90 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1391537125D1827D00ACFD90 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1391537525D1827F00ACFD90 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
